@@ -45,6 +45,7 @@ ModelImporter:
     2300020: Sphere
     2300022: Sphere_001
     2300024: Torso2
+    2300026: //RootNode
     3300000: Cube_001
     3300002: Cylinder
     3300004: Cylinder_001
@@ -58,6 +59,7 @@ ModelImporter:
     3300020: Sphere
     3300022: Sphere_001
     3300024: Torso2
+    3300026: //RootNode
     4300000: Sphere
     4300002: Cylinder_006
     4300004: Cylinder_005
@@ -110,7 +112,7 @@ ModelImporter:
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
-    importLights: 1
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
