@@ -20,26 +20,18 @@ public class Movement : MonoBehaviour
     {
         //Player moves toward the opponent.
         if (Input.GetKey(Forward))
-        {
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveY * Time.deltaTime);
-        }
 
         //Player moves clockwise around the opponent.
         if (Input.GetKey(Left))
-        {
             transform.RotateAround(target.position, Vector3.up, moveX * Time.deltaTime);
-        }
 
         //Player moves away from opponent.
         if (Input.GetKey(Backward))
-        {
             transform.position = Vector3.MoveTowards(transform.position, target.position, -moveY * Time.deltaTime);
-        }
 
         //Player moves counter-clockwise around the opponent.
         if (Input.GetKey(Right))
-        {
             transform.RotateAround(target.position, Vector3.up, -moveX * Time.deltaTime);
-        }
     }
 }
