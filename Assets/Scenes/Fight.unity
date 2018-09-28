@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4368832, g: 0.48453814, b: 0.5647949, a: 1}
+  m_IndirectSpecularColor: {r: 0.43688282, g: 0.48453742, b: 0.5647937, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -794,7 +794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 2006979797}
   player2: {fileID: 1444847926}
-  splitDistance: 7.5
+  splitDistance: 5
   splitterColor: {r: 0, g: 0, b: 0, a: 0}
   splitterWidth: 0.05
 --- !u!124 &534669907
