@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     public KeyCode Backward;
     public KeyCode Left;
     public KeyCode Right;
+    public Transform Target;
 
     void FixedUpdate()
     {
@@ -21,5 +22,9 @@ public class Movement : MonoBehaviour
             transform.position += Vector3.left / 10;
         else if (Input.GetKey(Right))
             transform.position += Vector3.right / 10;
+    }
+    void Update()
+    {
+        transform.LookAt(new Vector3(Target.position.x, transform.position.y, Target.position.z));
     }
 }
