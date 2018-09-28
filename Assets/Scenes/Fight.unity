@@ -472,6 +472,7 @@ GameObject:
   - component: {fileID: 1009652291}
   - component: {fileID: 1009652294}
   - component: {fileID: 1009652295}
+  - component: {fileID: 1009652296}
   m_Layer: 0
   m_Name: P2 Hurtbox
   m_TagString: Untagged
@@ -574,6 +575,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 1
   center: {fileID: 1444847926}
+--- !u!114 &1009652296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1009652289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bce0c477e749094d94e636f8949f7cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 1
+  opponent: player1
 --- !u!1 &1397937165
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,9 +689,10 @@ GameObject:
   - component: {fileID: 1444847923}
   - component: {fileID: 1444847927}
   - component: {fileID: 1444847929}
+  - component: {fileID: 1444847928}
   m_Layer: 0
   m_Name: player2
-  m_TagString: Untagged
+  m_TagString: player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -765,6 +780,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1444847928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444847922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3280b1a9a3a1649bdfb2addf164342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 0}
+  MaxHealth: 10
+  CurrentHealth: 0
 --- !u!114 &1444847929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,9 +908,10 @@ GameObject:
   - component: {fileID: 2006979794}
   - component: {fileID: 2006979798}
   - component: {fileID: 2006979799}
+  - component: {fileID: 2006979800}
   m_Layer: 0
   m_Name: player1
-  m_TagString: Untagged
+  m_TagString: player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -985,6 +1015,20 @@ MonoBehaviour:
   Left: 97
   Right: 100
   Target: {fileID: 1444847926}
+--- !u!114 &2006979800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006979793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3280b1a9a3a1649bdfb2addf164342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 0}
+  MaxHealth: 10
+  CurrentHealth: 0
 --- !u!1 &2026785604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1127,7 @@ GameObject:
   - component: {fileID: 2118005249}
   - component: {fileID: 2118005252}
   - component: {fileID: 2118005253}
+  - component: {fileID: 2118005254}
   m_Layer: 0
   m_Name: P1 Hurtbox
   m_TagString: Untagged
@@ -1185,3 +1230,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 1
   center: {fileID: 2006979797}
+--- !u!114 &2118005254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2118005247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bce0c477e749094d94e636f8949f7cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 1
+  opponent: player2
