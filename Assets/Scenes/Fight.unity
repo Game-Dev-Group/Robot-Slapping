@@ -1226,10 +1226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493987c5600459445bb256bb85274423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Punch: 256
+  Punch: 46
   Target: {fileID: 2006979797}
   OrigPosition: {fileID: 1444847926}
-  Speed: 15
+  Speed: 500
 --- !u!114 &1009652295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1572,10 +1572,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9075dff49cfa81b4c9d80cf411f31384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Forward: 273
-  Backward: 274
-  Left: 276
-  Right: 275
+  Forward: 105
+  Backward: 107
+  Left: 106
+  Right: 108
   Target: {fileID: 2006979797}
 --- !u!1 &1604987985
 GameObject:
@@ -2086,10 +2086,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493987c5600459445bb256bb85274423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Punch: 103
+  Punch: 99
   Target: {fileID: 1444847926}
   OrigPosition: {fileID: 2006979797}
-  Speed: 15
+  Speed: 500
 --- !u!114 &2118005253
 MonoBehaviour:
   m_ObjectHideFlags: 0

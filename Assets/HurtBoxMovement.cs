@@ -21,7 +21,7 @@ public class HurtBoxMovement : MonoBehaviour
     {
         float step = Speed * Time.deltaTime;
 
-        if (Input.GetKey(Punch))
+        if (Input.GetKeyDown(Punch))
             transform.position = Vector3.Lerp(transform.position, Target.position, step);
         else
             transform.position = Vector3.MoveTowards(transform.position, OrigPosition.position, step);
