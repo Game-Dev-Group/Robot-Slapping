@@ -1,81 +1,16 @@
 fileFormatVersion: 2
-guid: 9cbec51517abdc94cbf8354288b1815e
+guid: 92b8f77435662bc4faa5106056449716
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cube_001
-    100002: Cylinder
-    100004: Cylinder_001
-    100006: Cylinder_002
-    100008: Cylinder_003
-    100010: Cylinder_004
-    100012: Cylinder_005
-    100014: Cylinder_006
-    100016: Cylinder_007
-    100018: Cylinder_010
-    100020: //RootNode
-    100022: Sphere
-    100024: Sphere_001
-    100026: Torso2
-    400000: Cube_001
-    400002: Cylinder
-    400004: Cylinder_001
-    400006: Cylinder_002
-    400008: Cylinder_003
-    400010: Cylinder_004
-    400012: Cylinder_005
-    400014: Cylinder_006
-    400016: Cylinder_007
-    400018: Cylinder_010
-    400020: //RootNode
-    400022: Sphere
-    400024: Sphere_001
-    400026: Torso2
-    2100000: unnamed
-    2300000: Cube_001
-    2300002: Cylinder
-    2300004: Cylinder_001
-    2300006: Cylinder_002
-    2300008: Cylinder_003
-    2300010: Cylinder_004
-    2300012: Cylinder_005
-    2300014: Cylinder_006
-    2300016: Cylinder_007
-    2300018: Cylinder_010
-    2300020: Sphere
-    2300022: Sphere_001
-    2300024: Torso2
-    2300026: //RootNode
-    3300000: Cube_001
-    3300002: Cylinder
-    3300004: Cylinder_001
-    3300006: Cylinder_002
-    3300008: Cylinder_003
-    3300010: Cylinder_004
-    3300012: Cylinder_005
-    3300014: Cylinder_006
-    3300016: Cylinder_007
-    3300018: Cylinder_010
-    3300020: Sphere
-    3300022: Sphere_001
-    3300024: Torso2
-    3300026: //RootNode
-    4300000: Sphere
-    4300002: Cylinder_006
-    4300004: Cylinder_005
-    4300006: Torso2
-    4300008: Cylinder
-    4300010: Cylinder_001
-    4300012: Cylinder_002
-    4300014: Cylinder_003
-    4300016: Cylinder_004
-    4300018: Cylinder_007
-    4300020: Cylinder_010
-    4300022: Cube_001
-    4300024: Sphere_001
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2100000: None
+    2300000: default
+    3300000: default
+    4300000: default
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -113,7 +48,7 @@ ModelImporter:
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
-    importLights: 0
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -128,7 +63,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -153,7 +88,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
