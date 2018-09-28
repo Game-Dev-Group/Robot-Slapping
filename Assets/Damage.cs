@@ -6,14 +6,16 @@ public class Damage : MonoBehaviour
     public int attackDamage = 1;
     public string opponent;
 
-    Health health;
+    Health opponentHealth;
+    Health playerHealth;
     GameObject player;
     bool InRange;
 
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag(opponent);
-        health = player.GetComponent<Health>();
+        opponentHealth = player.GetComponent<Health>();
+        playerHealth = GetComponent<Health>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -24,18 +26,19 @@ public class Damage : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        InRange = false;
+        if (other.gameObject == player)
+            InRange = false;
     }
 
     void Update()
     {
-        if (InRange)
+        if (InRange && opponentHealth.CurrentHealth > 0)
             Attack();
     }
 
     void Attack()
     {
-        if (health.CurrentHealth > 0)
-            health.TakeDamage(attackDamage);
+        if (opponentHealth.CurrentHealth > 0)
+            opponentHealth.TakeDamage(attackDamage);
     }
 }

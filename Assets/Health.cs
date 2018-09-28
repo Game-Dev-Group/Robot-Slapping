@@ -1,24 +1,24 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEditor.Experimental.UIElements.GraphView;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     public Slider healthSlider;
-
-    public int MaxHealth = 10;
+    public int MaxHealth;
     public int CurrentHealth;
+    public string player;
 
-    Movement movement;
-    HurtBoxMovement hurtBoxMovement;
+    GameObject me;
     bool isDead;
     bool damaged;
 
     void Awake()
     {
-        movement = GetComponent<Movement>();
-        hurtBoxMovement = GetComponent<HurtBoxMovement>();
-
+        me = GameObject.FindGameObjectWithTag(player);
         CurrentHealth = MaxHealth;
+        isDead = false;
     }
 
     void Update()
@@ -44,7 +44,6 @@ public class Health : MonoBehaviour
     {
         isDead = true;
 
-        movement.enabled = false;
-        hurtBoxMovement.enabled = false;
+        me.SetActive(false);
     }
 }
