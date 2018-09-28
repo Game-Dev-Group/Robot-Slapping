@@ -1,21 +1,22 @@
 ﻿using System.Collections;
+using System.Threading;
 using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    public int attackDamage = 1;
+    public float attackDelay;
+    public int attackDamage;
     public string opponent;
 
     Health opponentHealth;
-    Health playerHealth;
     GameObject player;
     bool InRange;
+    float timer;
 
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag(opponent);
         opponentHealth = player.GetComponent<Health>();
-        playerHealth = GetComponent<Health>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -32,12 +33,15 @@ public class Damage : MonoBehaviour
 
     void Update()
     {
-        if (InRange && opponentHealth.CurrentHealth > 0)
+        timer += Time.deltaTime;
+        if (timer >= attackDelay && InRange)
             Attack();
     }
 
     void Attack()
     {
+        timer = 0f;
+
         if (opponentHealth.CurrentHealth > 0)
             opponentHealth.TakeDamage(attackDamage);
     }

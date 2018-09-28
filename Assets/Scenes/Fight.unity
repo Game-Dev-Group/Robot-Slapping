@@ -189,9 +189,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 25
+  m_MaxValue: 10
   m_WholeNumbers: 1
-  m_Value: 25
+  m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1254,6 +1254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bce0c477e749094d94e636f8949f7cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackDelay: 0.5
   attackDamage: 1
   opponent: player1
 --- !u!65 &1009652297
@@ -1344,9 +1345,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 1
   m_MinValue: 0
-  m_MaxValue: 25
+  m_MaxValue: 10
   m_WholeNumbers: 1
-  m_Value: 25
+  m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1557,7 +1558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSlider: {fileID: 1052382998}
-  MaxHealth: 25
+  MaxHealth: 10
   CurrentHealth: 0
   player: player2
 --- !u!114 &1444847929
@@ -1863,7 +1864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSlider: {fileID: 10835639}
-  MaxHealth: 25
+  MaxHealth: 10
   CurrentHealth: 0
   player: player1
 --- !u!1 &2026785604
@@ -2113,6 +2114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bce0c477e749094d94e636f8949f7cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackDelay: 0.5
   attackDamage: 1
   opponent: player2
 --- !u!65 &2118005255
