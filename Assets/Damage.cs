@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Threading;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class Damage : MonoBehaviour
     public float attackDelay;
     public int attackDamage;
     public string opponent;
+    public bool isBlocked;
 
     Health opponentHealth;
     GameObject player;
@@ -17,11 +19,12 @@ public class Damage : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag(opponent);
         opponentHealth = player.GetComponent<Health>();
+        isBlocked = false;
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject == player)
+        if(other.gameObject == player && !isBlocked)
             InRange = true;
     }
 
@@ -33,6 +36,7 @@ public class Damage : MonoBehaviour
 
     void Update()
     {
+        isBlocked = HurtBoxMovement.isBlocked;
         timer += Time.deltaTime;
         if (timer >= attackDelay && InRange)
             Attack();

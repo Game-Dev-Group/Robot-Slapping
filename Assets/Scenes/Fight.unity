@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43688282, g: 0.48453742, b: 0.5647937, a: 1}
+  m_IndirectSpecularColor: {r: 0.4368832, g: 0.48453814, b: 0.5647949, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1240,6 +1240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Punch: 46
+  Block: 47
   Target: {fileID: 2006979797}
   OrigPosition: {fileID: 1444847926}
   Speed: 500
@@ -1270,6 +1271,7 @@ MonoBehaviour:
   attackDelay: 0.5
   attackDamage: 1
   opponent: player1
+  isBlocked: 0
 --- !u!65 &1009652297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2100,6 +2102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Punch: 99
+  Block: 118
   Target: {fileID: 1444847926}
   OrigPosition: {fileID: 2006979797}
   Speed: 500
@@ -2130,6 +2133,7 @@ MonoBehaviour:
   attackDelay: 0.5
   attackDamage: 1
   opponent: player2
+  isBlocked: 0
 --- !u!65 &2118005255
 BoxCollider:
   m_ObjectHideFlags: 0

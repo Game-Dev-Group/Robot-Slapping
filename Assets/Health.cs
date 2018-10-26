@@ -1,6 +1,4 @@
-﻿using UnityEditor;
-//using UnityEditor.Experimental.UIElements.GraphView;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
