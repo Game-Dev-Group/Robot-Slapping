@@ -2,24 +2,16 @@
 
 public class Movement : MonoBehaviour
 {
-    //Player inputs
-    public string Forward;
-    public string Left;
-    public string Backward;
-    public string Right;
 
-<<<<<<< HEAD
     //Get the keycodes for all the various directions of movement.
     public KeyCode Forward;
     public KeyCode Backward;
     public KeyCode Left;
     public KeyCode Right;
     public Transform Target;
-=======
     //Amount of movement
     public float moveX;
     public float moveY;
->>>>>>> parent of 22d8bcb... Reworking Movement and Camera
 
     //Center of Rotation/Movement
     public Transform target;
